@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(10, 36, 59);
+}
+header{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(20, 20, 20);
+    display: block;
+}
+.logoPrincipal{
+    width: 100px;
+}
+.lupa{
+    width: 60px;
+}
+.carrito{
+    width: 60px;
+}
+#navFlex{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+}
+.tituloPrincipal{
+    font-size: 70px;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+}
+.divTitulo,#paginas{
+    text-align: center;
+}
+.subtitulo{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    top: -15px;
+}
+.productosDestacadoIMG{
+    width: 100%;
+    height: 350px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: rgb(207, 186, 147);
+}
+#paginas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.pagina1,.pagina2,.pagina3,.pagina4{
+    font-size: 30px;
+    color: rgb(195, 195, 195);
+}
+#imagenpaginas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.pcgamerimagen0{
+    width: 170px;
+}
+.notebookimagen0{
+    width: 220px;
+}
+.gabineteimagen0{
+    width: 200px;
+}
+.monitorimagen0{
+    width: 180px;
+    padding: 0px 18px;
+}
+footer{
+    display: flex;
+    bottom: 0px;
+    width: 100%;
+    height: 120px;
+    background-color: rgb(17, 33, 112);
+}
+#idFooter{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.instagram,.youtube,.twitter{
+    position: relative;
+    width: 40px;
+    margin: 0px 20px 0px 0px;
+    
+}
+.fiscaldata{
+    position: relative;
+    width: 80px;
+}
+.divLinks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.divContacto{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+
+}
+.linkcodigo{
+    color: white;
+    background-color: rgb(27, 26, 26) ;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+p,#mainContactos{
+    text-align: center;
+    margin-top: 50px;
+}
+#idContactos{
+    margin: 0px 0px 0px 0px;
+    display: inline-block;
+    background-color: aliceblue;
+    width: 600px;
+    height: 500px;
+}
+.formularios{
+    text-align: left;
+    color: black;
+}
