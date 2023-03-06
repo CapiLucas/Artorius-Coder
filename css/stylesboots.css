@@ -57,43 +57,6 @@ li{
     height: 350px;
     text-align: center;
 }
-#paginas{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
-}
-.pagina1,.pagina2,.pagina3,.pagina4{
-    font-size: 30px;
-    color: rgb(195, 195, 195);
-}
-#imagenpaginas{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.pcgamerimagen0{
-    width: 170px;
-}
-.notebookimagen0{
-    width: 220px;
-}
-.gabineteimagen0{
-    width: 200px;
-}
-.monitorimagen0{
-    width: 180px;
-    padding: 0px 18px;
-}
-#mainFooter{
-    display: flex;
-    bottom: 0px;
-    width: 100%;
-    height: 120px;
-    background-color: rgb(17, 33, 112);
-}
 #idFooter{
     width: 100%;
     height: 120px;
@@ -118,7 +81,6 @@ li{
     flex-wrap: wrap;
     justify-content: flex-start;
 }
-
 .divContacto{
     position: absolute;
     text-align: center;
@@ -131,16 +93,9 @@ li{
     border: 1px solid black;
     border-radius: 5px;
 }
-p,#mainContactos{
+p{
     text-align: center;
     margin-top: 50px;
-}
-#idContactos{
-    margin: 0px 0px 0px 0px;
-    display: inline-block;
-    background-color: aliceblue;
-    width: 600px;
-    height: 500px;
 }
 .buscar{
     position: absolute;
@@ -178,21 +133,19 @@ p,#mainContactos{
 .buscar input:focus{
     width: 240px;
 }
-.formularios{
-    text-align: left;
-    color: black;
-}
 .imagenpc{
     height: 225px;
     width: 245px;
 }
+
 .precio{
     text-align: start;
     padding: 5px 15px;
+    height: 35px;
     margin-top: 0px;
     background-color: #885ab1;
     border-radius: 7px 0px 0px 7px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .product-box{
     width: 250px;
@@ -242,7 +195,6 @@ p,#mainContactos{
 }
 .gridFooter{
     display: flex;
-    margin-top: 20px;
     bottom: 0px;
     width: 100%;
     height: 120px;
@@ -264,9 +216,6 @@ p,#mainContactos{
     background-color: #808080;
     color: rgb(37, 36, 36);
     border-radius: 0px 7px 7px 0px;
-}
-.micasa{
-    text-align: center;
 }
 h4{
     font-size: 13px;
