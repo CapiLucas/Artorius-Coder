@@ -200,6 +200,7 @@ p,#mainContactos{
     width: 245px;
 }
 .precio{
+    width: 180px;
     text-align: start;
     padding: 5px 15px;
     margin-top: 0px;
@@ -252,7 +253,12 @@ p,#mainContactos{
     justify-content: center;
 }
 .fa-solid{
-    top: px;
+    top: 5px;
+    position: relative;
+}
+.fa-cart-shopping{
+    top: 10;
+    font-size: 20px;
     position: relative;
 }
 .btnComprar{
@@ -379,7 +385,7 @@ h4{
         position: relative;
     }
     p{
-        font-size: 25px;
+        font-size: 20px;
     }
     /* styles for screen sizes smaller than 767px */ 
   } 
