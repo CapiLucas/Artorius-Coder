@@ -201,7 +201,8 @@ p,#mainContactos{
 }
 .precio{
     width: 180px;
-    text-align: start;
+    text-align: center;
+    font-weight: bold;
     padding: 5px 15px;
     margin-top: 0px;
     background-color: #885ab1;
