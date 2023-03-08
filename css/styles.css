@@ -3,8 +3,16 @@
     margin: 0;
     padding: 0;
 }
+html {
+    position: relative;
+    min-height: 100%;
+  }
 body{
+    position: relative;
     background-color:#0e7275;
+    padding-bottom: 120px;
+    min-height: 100vh;
+    min-width: 100vh;
 }
 header{
     position: sticky;
@@ -13,6 +21,10 @@ header{
     height: 100px;
     background-color: rgb(20, 20, 20);
     display: block;
+}
+.Home{
+    background-color: #0e7275;
+    border: solid 1px black;
 }
 .linkTitulo{
     text-decoration: none;
@@ -88,6 +100,7 @@ li{
     padding: 0px 18px;
 }
 #mainFooter{
+    position: absolute;
     display: flex;
     bottom: 0px;
     width: 100%;
@@ -202,27 +215,12 @@ p,#mainContactos{
     border:1px solid #98d5d6;
     border-radius: 5px 5px 5px 5px;
 }
-.gridContainer{
-    min-height: 100vh;
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "section section section"
-    "section section section"
-    "footer footer footer";
-}
 .headerGrid1{
     grid-area: header
 }
-.sectionGrid{
-    grid-area: section;
-    display: grid;
-    grid-template-areas:     
-    "productos productos productos"
-    "productos2 productos2 productos2";
-}
 .productos{
     border-radius: 10px 10px 10px 10px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -241,19 +239,20 @@ p,#mainContactos{
     grid-area: productos2;
 }
 .gridFooter{
+    position: absolute;
     display: flex;
     margin-top: 20px;
-    bottom: 0px;
     width: 100%;
-    height: 120px;
+    padding: 1em 0;
     background-color: rgb(17, 33, 112);
     grid-area: footer;
 }
 .productFooter{
     display: flex;
+    justify-content: center;
 }
 .fa-solid{
-    top: 7px;
+    top: px;
     position: relative;
 }
 .btnComprar{
@@ -268,7 +267,119 @@ p,#mainContactos{
 .micasa{
     text-align: center;
 }
+.map-area{
+    width: 600px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
+.map-area iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 h4{
     font-size: 13px;
     font-family: 'Libre Baskerville', serif;
 }
+.sectionGrid{
+    grid-area: section;
+    display: grid;
+    grid-template-areas:     
+    "productos productos productos"
+    "productos2 productos2 productos2";
+}
+.gridContainer{
+    margin: 0;
+    position: relative;
+    background-color:#0e7275;
+    padding-bottom: 120px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "section section section"
+    "footer footer footer";
+    grid-template-rows: auto 1fr auto;
+}
+@media (max-width: 767px) { 
+    .logoPrincipal{
+        width: 80px;
+    }
+    .carrito{
+        width: 50px;
+    }
+    .tituloPrincipal{
+        font-size: 55px;
+    }
+    .subtitulo{
+        font-size: 25px;
+        top: -15px;
+    }
+    .product-box{
+        width: 300px;
+        height: 500px;
+        margin: 30px 10px 0px 10px;
+    }
+    .imagenpc{
+        height: 295px;
+        width: 295px;
+    }
+    .gridContainer{
+        grid-template-areas: 
+        "header header "
+        "section section "
+        "footer footer ";
+        grid-template-rows: auto 1fr auto;
+    }
+    .sectionGrid{   
+        justify-content: space-evenly;
+        grid-template-areas:     
+        "productos productos2"
+        "productos productos2"
+        "productos productos2"
+    }
+    .productos{
+        margin-top: 10px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .productos2{
+        margin-top: 10px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .buscar{
+        right: 50px;
+    }
+    .btn{
+        width: 55px;
+        height: 55px;
+    }
+    h4{
+        font-size: 30px;
+        font-family: 'Libre Baskerville', serif;
+    }
+    .productFooter{
+        height: 85px;
+    }
+    .btnComprar{
+        height: auto;
+        width: 150px;
+    }
+    .precio{
+        width: 150px;
+        text-align: center;
+    }
+    .fa-cart-shopping{
+        font-size: 40px;
+        top: 20px;
+        position: relative;
+    }
+    p{
+        font-size: 25px;
+    }
+    /* styles for screen sizes smaller than 767px */ 
+  } 
