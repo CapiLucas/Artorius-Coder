@@ -12,7 +12,6 @@ body{
     background-color:#0e7275;
     padding-bottom: 120px;
     min-height: 100vh;
-    min-width: 100vh;
 }
 header{
     position: sticky;
