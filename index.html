@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artorius gaming is a page specialized in the sale of high-performance and quality Hardware for the Gamer world.">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,16 +14,17 @@
     <script src="https://kit.fontawesome.com/2ac8ba4401.js" crossorigin="anonymous"></script>
     <title>PreEntrega2</title>
     <link rel="icon" href="./images/icono-pag.ico" type="image/icon type">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
-<body>
-    <header>
+<body class="bodyMainGrid">
+    <header class="headerGrid1">
         <nav id="navFlex">
             <div class="divLogo">
-                <a href="index.html"> <img class="logoPrincipal" src="./images/logo.png" alt="Logo"></a>
+                <a href="./index.html"> <img class="logoPrincipal" src="./images/logo.png" alt="Logo"></a>
             </div>
             <div class="divTitulo">
-                <a class="linkTitulo" href="index.html"><h1 class="tituloPrincipal">ARTORIUS</h1></a>
+                <h1 class="tituloPrincipal">ARTORIUS</h1>
                 <h3 class="subtitulo">Gaming Equipment</h3>
 
             </div>
@@ -33,34 +35,39 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
-                <a href="index.html"><img class="carrito" src="./images/carrito en blanco.png" alt="carritologo"></a>
+                <a href="./index.html"><img class="carrito" src="./images/carrito en blanco.png" alt="carritologo"></a>
             </div>
         </nav>
     </header>
-    <main>
-        <div class="destacados">
-            <a href="index.html"><img class="productosDestacadoIMG" src="./images/productos destacados.jpg" alt="productosdestacado"></a>
-        </div>
-        <section id="paginas">
-            <a class="pagina1" href="./pages/computadoras.html">PC GAMER</a>
-            <a class="pagina2" href="./pages/notebooks.html">NOTEBOOK</a>
-            <a class="pagina3" href="./pages/gabinete.html">GABINETES</a>
-            <a class="pagina4" href="./pages/monitores.html">MONITORES</a>
+    <main class="mainGrid">
+        <section class="mainInfo">
+            <div class="mainPages animate__animated animate__fadeInUp" >
+                <a class="pagina1" href="./pages/computadoras.html">PC GAMER</a>
+                <img class="mainImages" src="./images/pc0.png" alt="pcgamer">
+            </div>
+            <div class="mainPages animate__animated animate__fadeInUp" >
+                <a class="pagina2" href="./pages/notebooks.html">NOTEBOOK</a>
+                <img class="mainImages" src="./images/notebooks0.png" alt="notebook">
+            </div>
         </section>
-        <section id="imagenpaginas">
-            <img class="pcgamerimagen0" src="./images/pc0.png" alt="pcgamer">
-            <img class="notebookimagen0" src="./images/notebooks0.png" alt="notebook">
-            <img class="gabineteimagen0" src="./images/gabinete0.png" alt="gabinete">
-            <img class="monitorimagen0" src="./images/monitor0.png" alt="monitor">
+        <section class="mainInfo2">
+            <div class="mainPages animate__animated animate__fadeInUp" >
+                <a class="pagina3" href="./pages/gabinete.html">GABINETES</a>
+                <img class="mainImages" src="./images/gabinete0.png" alt="gabinete">
+            </div>
+            <div class="mainPages animate__animated animate__fadeInUp" >
+                <a class="pagina4" href="./pages/monitores.html">MONITORES</a>
+                <img class="mainImages" src="./images/monitor0.png" alt="monitor">
+            </div>
         </section>
-            <footer id="mainFooter">
+    </main>
+    <footer class="gridFooter">
         <div id="idFooter">
             <div class="divLinks">
                 <a href="https://www.youtube.com"><img class="youtube" src="./images/youtube.png" alt="youtube"></a>
                 <a href="https://www.instagram.com"><img class="instagram" src="./images/instagram.png" alt="instagram"></a>
                 <a href="https://www.twitter.com"><img class="twitter" src="./images/twitter.png" alt="twitter"></a>
             </div>
-
             <div>
                 <img class="fiscaldata" src="./images/fiscalData.png" alt="datosfiscales"> 
             </div> 
@@ -69,11 +76,10 @@
             <a class="linkcodigo" href="./pages/contact-page.html">CONTACTOS</a>
         </div>
         <div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur.
+            <p class="sobrante">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
             </p>
         </div>
     </footer>
-    </main>
 </body>
 </html>

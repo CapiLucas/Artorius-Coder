@@ -13,17 +13,19 @@ body{
     padding-bottom: 120px;
     min-height: 100vh;
 }
-header{
+.Home{
+    background-color: #0e7275;
+    border: solid 1px black;
+}
+.headerGrid1{
     position: sticky;
     top: 0px;
     width: 100%;
     height: 100px;
     background-color: rgb(20, 20, 20);
     display: block;
-}
-.Home{
-    background-color: #0e7275;
-    border: solid 1px black;
+    z-index: 1;
+    grid-area: header
 }
 .linkTitulo{
     text-decoration: none;
@@ -63,17 +65,17 @@ li{
     font-size: 20px;
     top: -15px;
 }
-.productosDestacadoIMG{
-    width: 100%;
-    height: 350px;
-    text-align: center;
-}
-#paginas{
+.mainInfo{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
+    justify-content: space-around;
+    grid-area: info1;
+}
+.mainInfo2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-area: info2;
 }
 .pagina1,.pagina2,.pagina3,.pagina4{
     font-size: 30px;
@@ -84,19 +86,6 @@ li{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-.pcgamerimagen0{
-    width: 170px;
-}
-.notebookimagen0{
-    width: 220px;
-}
-.gabineteimagen0{
-    width: 200px;
-}
-.monitorimagen0{
-    width: 180px;
-    padding: 0px 18px;
 }
 #mainFooter{
     position: absolute;
@@ -143,16 +132,10 @@ li{
     border: 1px solid black;
     border-radius: 5px;
 }
-p,#mainContactos{
+.sobrante{
+    font-size: 30px;
     text-align: center;
     margin-top: 50px;
-}
-#idContactos{
-    margin: 0px 0px 0px 0px;
-    display: inline-block;
-    background-color: aliceblue;
-    width: 600px;
-    height: 500px;
 }
 .buscar{
     position: absolute;
@@ -190,13 +173,13 @@ p,#mainContactos{
 .buscar input:focus{
     width: 240px;
 }
-.formularios{
-    text-align: left;
-    color: black;
-}
 .imagenpc{
     height: 225px;
     width: 245px;
+}
+.mainImages{
+    width: 225px;
+    height: 245px;
 }
 .precio{
     width: 180px;
@@ -215,9 +198,29 @@ p,#mainContactos{
     background-color: #98d5d6;
     border:1px solid #98d5d6;
     border-radius: 5px 5px 5px 5px;
+    transition: 0.5s;
 }
-.headerGrid1{
-    grid-area: header
+.product-box:hover{
+    transform: scale(1.1,1.1);
+}
+
+.mainPages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 250px;
+    height: 300px;
+    margin: 0px 0px 0px 0px;
+    background-color: #440080;
+    border:1px solid #440080;
+    border-radius: 5px 5px 5px 5px;
+}
+.mainGrid{
+    display: grid;
+    grid-area: main;
+    align-content: center;
+    grid-template-areas: 
+    "info1 info1 info2 info2";
 }
 .productos{
     border-radius: 10px 10px 10px 10px;
@@ -270,9 +273,6 @@ p,#mainContactos{
     color: rgb(37, 36, 36);
     border-radius: 0px 7px 7px 0px;
 }
-.micasa{
-    text-align: center;
-}
 .map-area{
     width: 600px;
     height: 450px;
@@ -294,6 +294,19 @@ h4{
     grid-template-areas:     
     "productos productos productos"
     "productos2 productos2 productos2";
+}
+.bodyMainGrid{
+    margin: 0;
+    position: relative;
+    background-color:#0e7275;
+    padding-bottom: 120px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main "
+    "footer footer footer";
+    grid-template-rows: auto 1fr auto;
 }
 .gridContainer{
     margin: 0;
@@ -331,12 +344,31 @@ h4{
         height: 295px;
         width: 295px;
     }
+    .mainGrid{
+        grid-template-areas: 
+        "info1 info1"
+        "info2 info2";
+    }
+    .mainImages{
+        width: 180px;
+        height: 220px;
+    }
     .gridContainer{
         grid-template-areas: 
         "header header "
         "section section "
         "footer footer ";
-        grid-template-rows: auto 1fr auto;
+    }
+    .bodyMainGrid{
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+    }
+    .mainPages{
+    width: 190px;
+    height: 250px;
+    margin: 30px 10px 0px 10px;
     }
     .sectionGrid{   
         justify-content: space-evenly;
@@ -344,6 +376,9 @@ h4{
         "productos productos2"
         "productos productos2"
         "productos productos2"
+    }
+    .mainInfo{
+        flex-wrap: wrap;
     }
     .productos{
         margin-top: 10px;
@@ -384,8 +419,22 @@ h4{
         top: 20px;
         position: relative;
     }
-    p{
+    .sobrante{
         font-size: 20px;
     }
     /* styles for screen sizes smaller than 767px */ 
+  }
+  @media (max-width: 425px){
+    .instagram,.youtube,.twitter{
+        width: 35px;
+    }
+    .fiscaldata{
+        width: 70px;
+    }
+    .sobrante{
+        font-size: 20px;
+    }
+    .divContacto{
+        margin-top: 10px;
+    }
   } 
