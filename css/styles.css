@@ -239,6 +239,10 @@ li {
   background-color: #440080;
   border: 1px solid #440080;
   border-radius: 5px 5px 5px 5px;
+  transition: 0.5s;
+}
+.mainPages:hover {
+  box-shadow: 5px 5px 5px 5px black;
 }
 
 .mainGrid {
