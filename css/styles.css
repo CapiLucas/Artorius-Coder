@@ -446,7 +446,7 @@ h4 {
   .mainPages {
     width: 190px;
     height: 250px;
-    margin: 0px 10px 0px 10px;
+    margin: 15px 10px 10px 10px;
   }
   .sectionGrid {
     justify-content: space-evenly;
@@ -500,7 +500,7 @@ h4 {
 }
 @media (max-width: 425px) {
   .bodyMainGrid {
-    min-width: 112vh;
+    min-height: 107vh;
   }
   .instagram, .youtube, .twitter {
     width: 35px;
@@ -514,8 +514,15 @@ h4 {
   .divContacto {
     margin-top: 50px;
   }
+  .fiscaldata {
+    bottom: 40px;
+    right: 125px;
+  }
 }
 @media (max-width: 375px) {
+  .bodyMainGrid {
+    min-height: 110vh;
+  }
   .tituloPrincipal {
     font-size: 40px;
   }
