@@ -425,6 +425,9 @@ h4{
     /* styles for screen sizes smaller than 767px */ 
   }
   @media (max-width: 425px){
+    .bodyMainGrid{
+        min-width: 112vh;
+    }
     .instagram,.youtube,.twitter{
         width: 35px;
     }
@@ -435,6 +438,18 @@ h4{
         font-size: 20px;
     }
     .divContacto{
-        margin-top: 10px;
+        margin-top: 50px;
     }
   } 
+  @media (max-width: 320px){
+    .bodyMainGrid{
+        min-width: 0px;
+    }
+    .fiscaldata{
+        bottom: 40px;
+        right: 125px;
+    }
+    .sobrante{
+        font-size: 15px;
+    }
+  }
