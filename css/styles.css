@@ -505,9 +505,6 @@ h4 {
   .instagram, .youtube, .twitter {
     width: 35px;
   }
-  .fiscaldata {
-    width: 70px;
-  }
   .sobrante {
     font-size: 20px;
   }
@@ -515,6 +512,7 @@ h4 {
     margin-top: 50px;
   }
   .fiscaldata {
+    width: 70px;
     bottom: 40px;
     right: 125px;
   }
