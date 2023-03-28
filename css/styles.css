@@ -207,6 +207,7 @@ li {
 
 .precio {
   width: 180px;
+  font-size: 25px;
   text-align: center;
   font-weight: bold;
   padding: 5px 15px;
@@ -390,11 +391,6 @@ h4 {
 .btnComprar {
   height: auto;
   width: 150px;
-}
-
-.precio {
-  width: 150px;
-  text-align: center;
 }
 
 .fa-cart-shopping {
